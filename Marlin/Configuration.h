@@ -66,7 +66,7 @@
 
 // @section machine
 
-//#define ENDER_3S1_PRO
+#define ENDER_3S1_PRO
 //#define ENDER_3S1_PLUS
 //#define ENDER_3S1
 #define FORK_VERSION "v008"
@@ -86,11 +86,11 @@
 #if ENABLED(ENDER_3S1_PRO)
   #define E3S1PRO_RTS
   #define LCD_SERIAL_PORT 2
-  #define LCD_BAUDRATE 115200  
+  #define LCD_BAUDRATE 115200
 #elif ENABLED(ENDER_3S1_PLUS)
   #define E3S1PRO_RTS
   #define LCD_SERIAL_PORT 2
-  #define LCD_BAUDRATE 115200   
+  #define LCD_BAUDRATE 115200
 #elif ENABLED(ENDER_3S1)
   #define DWIN_CREALITY_LCD
   #define LCD_SERIAL_PORT 2
@@ -104,7 +104,7 @@
 
 #if ENABLED(ENDER_3S1_PRO)
   //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
-  #define CUSTOM_MACHINE_NAME "Ender-3 S1 Pro"  
+  #define CUSTOM_MACHINE_NAME "Ender-3 S1 Pro"
   #define MACVERSION        STRING_CONFIG_H_AUTHOR
   #define SOFTVERSION       SHORT_BUILD_VERSION
   #define MACHINE_TYPE      "Ender-3 S1 Pro"
@@ -114,9 +114,9 @@
     #elif GRID_MAX_POINTS_X == 7
       #define FIRMWARE_VERSION  "abl7x7-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 8
-      #define FIRMWARE_VERSION  "abl8x8-" FORK_VERSION "-byTT"      
+      #define FIRMWARE_VERSION  "abl8x8-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 9
-      #define FIRMWARE_VERSION  "abl9x9-" FORK_VERSION "-byTT"      
+      #define FIRMWARE_VERSION  "abl9x9-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 10
       #define FIRMWARE_VERSION  "abl10x10-" FORK_VERSION "-byTT"
     #endif
@@ -126,19 +126,19 @@
     #elif GRID_MAX_POINTS_X == 7
       #define FIRMWARE_VERSION  "ubl7x7-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 8
-      #define FIRMWARE_VERSION  "ubl8x8-" FORK_VERSION "-byTT"      
+      #define FIRMWARE_VERSION  "ubl8x8-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 9
-      #define FIRMWARE_VERSION  "ubl9x9-" FORK_VERSION "-byTT"      
+      #define FIRMWARE_VERSION  "ubl9x9-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 10
       #define FIRMWARE_VERSION  "ubl10x10-" FORK_VERSION "-byTT"
     #endif
   #endif
-  #define SCREEN_VERSION    "UI20" 
+  #define SCREEN_VERSION    "UI20"
   #define SCREEN_HW_VERSION "DWIN2021"
   #if ENABLED(USER_STM32F103RE)
   #define HARDWARE_VERSION  "CR-E3S1PRO-F1-RE"
   #elif ENABLED(USER_STM32F103RC)
-  #define HARDWARE_VERSION  "CR-E3S1PRO-F1-RC"  
+  #define HARDWARE_VERSION  "CR-E3S1PRO-F1-RC"
   #elif ENABLED(USER_STM32F401)
   #define HARDWARE_VERSION  "CR-E3S1PRO-F4"
   #endif
@@ -149,7 +149,7 @@
 
 #if ENABLED(ENDER_3S1_PLUS)
   //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
-  #define CUSTOM_MACHINE_NAME "Ender-3 S1 Plus"  
+  #define CUSTOM_MACHINE_NAME "Ender-3 S1 Plus"
   #define MACVERSION        STRING_CONFIG_H_AUTHOR
   #define SOFTVERSION       SHORT_BUILD_VERSION
   #define MACHINE_TYPE      "Ender-3 S1 Plus"
@@ -159,21 +159,21 @@
     #elif GRID_MAX_POINTS_X == 7
       #define FIRMWARE_VERSION  "abl7x7-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 8
-      #define FIRMWARE_VERSION  "abl8x8-" FORK_VERSION "-byTT"      
+      #define FIRMWARE_VERSION  "abl8x8-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 9
-      #define FIRMWARE_VERSION  "abl9x9-" FORK_VERSION "-byTT"      
+      #define FIRMWARE_VERSION  "abl9x9-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 10
       #define FIRMWARE_VERSION  "abl10x10-" FORK_VERSION "-byTT"
-    #endif    
+    #endif
   #else
     #if GRID_MAX_POINTS_X == 5
       #define FIRMWARE_VERSION  "ubl5x5-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 7
       #define FIRMWARE_VERSION  "ubl7x7-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 8
-      #define FIRMWARE_VERSION  "ubl8x8-" FORK_VERSION "-byTT"      
+      #define FIRMWARE_VERSION  "ubl8x8-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 9
-      #define FIRMWARE_VERSION  "ubl9x9-" FORK_VERSION "-byTT"      
+      #define FIRMWARE_VERSION  "ubl9x9-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 10
       #define FIRMWARE_VERSION  "ubl10x10-" FORK_VERSION "-byTT"
     #endif
@@ -183,7 +183,7 @@
   #if ENABLED(USER_STM32F103RE)
   #define HARDWARE_VERSION  "CR-E3S1PLUS-F1-RE"
   #elif ENABLED(USER_STM32F103RC)
-  #define HARDWARE_VERSION  "CR-E3S1PLUS-F1-RC"  
+  #define HARDWARE_VERSION  "CR-E3S1PLUS-F1-RC"
   #elif ENABLED(USER_STM32F401)
   #define HARDWARE_VERSION  "CR-E3S1PLUS-F4"
   #endif
@@ -194,7 +194,7 @@
 
 #if ENABLED(ENDER_3S1)
   //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
-  #define CUSTOM_MACHINE_NAME "Ender-3 S1"  
+  #define CUSTOM_MACHINE_NAME "Ender-3 S1"
   #define MACVERSION        STRING_CONFIG_H_AUTHOR
   #define SOFTVERSION       SHORT_BUILD_VERSION
   #define MACHINE_TYPE      "Ender-3 S1"
@@ -206,19 +206,19 @@
     #elif GRID_MAX_POINTS_X == 7
       #define FIRMWARE_VERSION  "ubl7x7-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 8
-      #define FIRMWARE_VERSION  "ubl8x8-" FORK_VERSION "-byTT"      
+      #define FIRMWARE_VERSION  "ubl8x8-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 9
-      #define FIRMWARE_VERSION  "ubl9x9-" FORK_VERSION "-byTT"      
+      #define FIRMWARE_VERSION  "ubl9x9-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 10
       #define FIRMWARE_VERSION  "ubl10x10-" FORK_VERSION "-byTT"
     #endif
   #endif
-  #define SCREEN_VERSION    "v1.0.1-byTT" 
+  #define SCREEN_VERSION    "v1.0.1-byTT"
   #define SCREEN_HW_VERSION "DWIN2021"
-  #if ENABLED(USER_STM32F103RE) 
+  #if ENABLED(USER_STM32F103RE)
   #define HARDWARE_VERSION  "CR-E3S1-F1-RE"
   #elif ENABLED(USER_STM32F103RC)
-  #define HARDWARE_VERSION  "CR-E3S1-F1-RC"  
+  #define HARDWARE_VERSION  "CR-E3S1-F1-RC"
   #elif ENABLED(USER_STM32F401)
   #define HARDWARE_VERSION  "CR-E3S1-F4"
   #endif
@@ -228,7 +228,7 @@
 #endif
 #if ENABLED(ENDER_3)
   // Author info of this build printed to the host during boot and M115
-  #define CUSTOM_MACHINE_NAME "Ender-3"    
+  #define CUSTOM_MACHINE_NAME "Ender-3"
   #define STRING_CONFIG_H_AUTHOR "build by TT" // Who made the changes.
   //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
   #define MACVERSION        STRING_CONFIG_H_AUTHOR
@@ -242,14 +242,14 @@
     #elif GRID_MAX_POINTS_X == 7
       #define FIRMWARE_VERSION  "ubl7x7-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 8
-      #define FIRMWARE_VERSION  "ubl8x8-" FORK_VERSION "-byTT"      
+      #define FIRMWARE_VERSION  "ubl8x8-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 9
-      #define FIRMWARE_VERSION  "ubl9x9-" FORK_VERSION "-byTT"      
+      #define FIRMWARE_VERSION  "ubl9x9-" FORK_VERSION "-byTT"
     #elif GRID_MAX_POINTS_X == 10
       #define FIRMWARE_VERSION  "ubl10x10-" FORK_VERSION "-byTT"
     #endif
   #endif
-  #define SCREEN_VERSION    "v1.0.1-byTT" 
+  #define SCREEN_VERSION    "v1.0.1-byTT"
   #define SCREEN_HW_VERSION "DWIN2021"
   #define HARDWARE_VERSION  "CR-FDM-beta"
   #define PRINT_SIZE        "235 * 235 * 250"
@@ -269,7 +269,7 @@
     #define SHORT_BUILD_VERSION FIRMWARE_VERSION
   #elif ENABLED(USER_STM32F401)
     #define SHORT_BUILD_VERSION FIRMWARE_VERSION
-  #endif  
+  #endif
 #endif
 
 /**
@@ -1796,7 +1796,7 @@
 
 // X and Y axis travel speed (mm/min) between probes
 #if ENABLED(ENDER_3S1_PLUS)
-  #define XY_PROBE_FEEDRATE (200*60) 
+  #define XY_PROBE_FEEDRATE (200*60)
 #else
   #define XY_PROBE_FEEDRATE (300*60)
 #endif
@@ -2286,7 +2286,7 @@
  */
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-//#define AUTO_BED_LEVELING_BILINEAR
+#define AUTO_BED_LEVELING_BILINEAR
 //#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
 
@@ -2300,7 +2300,7 @@
 // Attention: The values for X0,Y0 are hardcoded in src/lcd/e3v2/creality/lcd_rts.cpp in Line 1842 and 1851
 //            as the function does not allow to take a float (ex. 117.5)
 //            This applies for ENDER_3S1_PRO, ENDER_3S1_PLUS and ENDER_3S1
-#if ENABLED(ENDER_3S1_PRO) 
+#if ENABLED(ENDER_3S1_PRO)
   #if ENABLED(AUTO_BED_LEVELING_BILINEAR)
     //                                     X0,Y0    X1,Y1  X2,Y2   X3,Y3    X4 Y4   X5,Y5  X6,Y6   X7Y7     X8 Y8
     //                                Point: (1)     (6)      (7)    (8)     (9)      (2)    (3)     (4)     (5)
@@ -2308,7 +2308,7 @@
   #else
     #define MANUALL_BED_LEVEING_5POSITION {117,117, 45,45, 190,45, 45,190, 190,190, 10,10, 225,10, 10,225, 225,225}
   #endif
-#elif ENABLED(ENDER_3S1) 
+#elif ENABLED(ENDER_3S1)
   #if ENABLED(AUTO_BED_LEVELING_BILINEAR)
     //                                     X0,Y0    X1,Y1  X2,Y2   X3,Y3    X4 Y4   X5,Y5  X6,Y6   X7Y7     X8 Y8
     //                                Point: (1)     (6)      (7)    (8)     (9)      (2)    (3)     (4)     (5)
@@ -2325,10 +2325,10 @@
   #else
     #define MANUALL_BED_LEVEING_5POSITION {155,157, 45,45, 265,45, 45,270, 265,270, 15,15, 295,15, 15,300, 295,300}
   #endif
-#elif ENABLED(ENDER_3) 
+#elif ENABLED(ENDER_3)
     //                                     X0,Y0    X1,Y1    X2,Y2  X3,Y3   X4 Y4   X5,Y5  X6,Y6   X7,Y7   X8,Y8
     //                                Point: (1)     (6)      (7)    (7)     (8)     (2)    (3)     (4)     (5)
-  #define MANUALL_BED_LEVEING_5POSITION {117.5,117.5, 45,45, 190,45, 190,190, 45,190, 45,45, 190,45, 190,190, 45,190}  
+  #define MANUALL_BED_LEVEING_5POSITION {117.5,117.5, 45,45, 190,45, 190,190, 45,190, 45,45, 190,45, 190,190, 45,190}
 #endif
 
 /**
