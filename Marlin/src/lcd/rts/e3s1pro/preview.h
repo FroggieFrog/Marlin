@@ -11,18 +11,22 @@
 // #define PIC_FORMAT_LEN	1		// 图片格式长度（字节）
 enum{
 	PIC_FORMAT_JPG    = 0x00, // jpg格式图片
-	PIC_FORMAT_PNG    = 0x01, // png格式图片	
-	PIC_FORMAT_MAX    = 0x02, // 
-	PIC_FORMAT_JPG_PRUSA    = 0x03, // jpg格式图片    
+	PIC_FORMAT_PNG    = 0x01, // png格式图片
+	PIC_FORMAT_MAX    = 0x02, //
+	PIC_FORMAT_JPG_PRUSA    = 0x03, // jpg格式图片
 };
 #define FORMAT_JPG "jpg"
 #define FORMAT_JPG_PRUSA "thumbnail_JPG"
 #define FORMAT_PNG "png"
+
+#define THUMBWIDTH 250
+#define THUMBHEIGHT 250
+
 // 分辨率(长度1字节)
 // #define PIC_RESOLITION_LEN		1		// 图片分辨率长度（字节）
 enum{
-	PIC_RESOLITION_36_36   = 0x00, // 分辨率 = 36*36	
-	PIC_RESOLITION_48_48   = 0x01,	// 分辨率 = 48*48	
+	PIC_RESOLITION_36_36   = 0x00, // 分辨率 = 36*36
+	PIC_RESOLITION_48_48   = 0x01,	// 分辨率 = 48*48
     PIC_RESOLITION_64_64   = 0x02,	// 分辨率 = 64*64
     PIC_RESOLITION_96_96   = 0x03,	// 分辨率 = 96*96
     PIC_RESOLITION_144_144 = 0x04,	// 分辨率 = 144*144
@@ -73,7 +77,7 @@ enum{
 	PIC_RESOLITION_ERR,	// 图片分辨率错误
 	PIC_MISS_ERR,		// gcode无图片
 };
-      
+
 #define PRIWIEW_PIC_FORMAT_NEED         PIC_FORMAT_JPG
 #define PRIWIEW_PIC_RESOLITION_NEED     PIC_RESOLITION_48_48
 #define PRINT_PIC_FORMAT_NEED           PIC_FORMAT_JPG
